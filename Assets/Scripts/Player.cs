@@ -29,7 +29,6 @@ public class Player : MonoBehaviour
     private float defaultGravityScale;
 
     private bool isKnocked;
-    private bool canBeKnocked = true;
     [Header("Collision info")]
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private LayerMask whatIsWall;
@@ -175,9 +174,7 @@ public class Player : MonoBehaviour
     }
 
     private void AllowKnockback()
-    {
-        canBeKnocked = true;
-    }
+    {}
 
     private void Move()
     {
